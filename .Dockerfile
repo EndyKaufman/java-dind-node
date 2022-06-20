@@ -1,4 +1,4 @@
-FROM timbru31/java-node
+FROM timbru31/java-node:8-16
 LABEL MAINTAINER Ilshat Khamitov <ilshat.m.khamitov@gmail.com>
 
 RUN apt update \
@@ -7,8 +7,8 @@ RUN apt update \
     && rm -rf /var/lib/apt/list/*
 
 ENV DOCKER_CHANNEL=stable \
-	DOCKER_VERSION=19.03.11 \
-	DOCKER_COMPOSE_VERSION=1.26.0 \
+	DOCKER_VERSION=20.10.12 \
+	DOCKER_COMPOSE_VERSION=1.29.2 \
 	DEBUG=false
 
 # Docker installation
