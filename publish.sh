@@ -1,3 +1,3 @@
-docker build -t USERNAME/java-dind-node:latest --compress -f .Dockerfile .
-docker login -u USERNAME -p PASSWORD
-docker push USERNAME/java-dind-node:latest 
+docker build -t endykaufman/java-dind-node-18:latest --compress -f .Dockerfile .
+docker login -u endykaufman -p $PASSWORD
+docker push endykaufman/java-dind-node-18:latest
